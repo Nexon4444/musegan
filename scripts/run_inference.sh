@@ -4,6 +4,7 @@
 # performs inference from the trained model on the specified GPU.
 # Usage: run_inference.sh [EXP_DIR] [GPU_NUM]
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" > /dev/null && pwd )"
+echo "looking in $1"
 if [ ! -f "$1/config.yaml" ]; then
   echo "Configuration file not found" && exit 1
 fi

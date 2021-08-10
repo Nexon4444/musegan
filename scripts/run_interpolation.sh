@@ -5,6 +5,7 @@
 # model on the specified GPU.
 # Usage: run_interpolation.sh [EXP_DIR] [GPU_NUM]
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" > /dev/null && pwd )"
+
 if [ ! -f "$1/config.yaml" ]; then
   echo "Configuration file not found" && exit 1
 fi
